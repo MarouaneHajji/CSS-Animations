@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Clip-Path.css">
+    <title>Custom Shape with Rounded Corners</title>
+</head>
+<body>
+    <!-- SVG for defining the custom clip-path with rounded corners -->
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="custom-shape">
+                <!-- Updated path with rounded corners -->
+                <path d="M 10,50 L 90,50 A 10,10 0,0,0 100,40 L 100,10 A 10,10 0,0,1 110,0 L 190,0 A 10,10 0,0,1 200,10 L 200,190 A 10,10 0,0,1 190,200 L 10,200 A 10,10 0,0,1 0,190 L 0,60 A 10,10 0,0,1 10,50 Z"/>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- The box element with the custom shape -->
+    <div class="box"></div>
+</body>
+</html>
